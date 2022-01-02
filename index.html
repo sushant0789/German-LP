@@ -16,14 +16,276 @@
     <link rel="canonical" href="" />
   </head>
   <body>
+    <div class="container register">
+      <header>
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Stream video via webcam -->
+            <div class="video-wrap">
+              <video id="video"></video>
+              <div class="video-bg" onclick="playVideo()">
+                <img src="assets/images/admin.png" alt="admin" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">&nbsp;</div>
+          <div class="col-md-4">
+            <div class="img-outer">
+              <img
+                class="myImg"
+                src="assets/images/Passport.jpg"
+                alt="Passport"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="row">
+        <div class="col-md-12 register-right">
+          <h4 class="register-heading">
+            GUTEN MORGEN / TAG / ABEND.WILLKOMMEN ZU VERIFEYE ONLINE.
+          </h4>
+          <div class="register-form">
+            <div class="row form-group">
+              <label class="col-md-3 control-label">1. SPRECHE ICH MIT? </label>
+              <div class="col-md-6">
+                <input
+                  name="first_name"
+                  placeholder="Mr."
+                  class="form-control"
+                  type="text"
+                />
+                <small class="help-block">Check Title on Ausweis </small>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label"
+                >2. Check "Geburtsname"
+              </label>
+              <div class="col-md-3">
+                <input
+                  name="first_name"
+                  placeholder="First Name"
+                  class="form-control"
+                  type="text"
+                />
+              </div>
+              <div class="col-md-3">
+                <input
+                  name="first_name"
+                  placeholder="Maiden Name"
+                  class="form-control"
+                  type="text"
+                />
+                <small class="help-block">Check Maiden Name on Ausweis </small>
+              </div>
+              <div class="col-md-3">
+                <input
+                  name="first_name"
+                  placeholder="Last Name"
+                  class="form-control"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-12 control-label"
+                >3. MACHEN SIE DIE VERIFIZIERUNG FREIWILLIG?
+              </label>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-12 control-label"
+                >4. BITTE WINKEN SIE MIT DER RECHTEN/LINKEN HAND UND HALTEN SIE
+                DIESE KURZ VOR IHR GESICHT
+              </label>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-12 control-label"
+                >5. KÖNNEN SIE MIR BITTE IHREN AUSWEIS ZEIGEN? (Drehen und
+                Kippen um die optischen Merkmale zu sehen)
+              </label>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label"
+                >6. BITTE LESEN SIE MIR DIE DOKUMENT-NUMMER VOR
+              </label>
+              <div class="col-md-6">
+                <input
+                  name="first_name"
+                  placeholder="+"
+                  class="form-control"
+                  type="text"
+                />
+                <small class="help-block">Check Number on Ausweis </small>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label"
+                >7. WANN SIND SIE GEBOREN?
+              </label>
+              <div class="col-md-6">
+                <input
+                  name="first_name"
+                  placeholder="yyyy-mm-dd"
+                  class="form-control"
+                  type="text"
+                />
+                <small class="help-block">Check DOB on Ausweis </small>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label"
+                >8. WO SIND SIE GEBOREN?
+              </label>
+              <div class="col-md-6">
+                <input
+                  name="first_name"
+                  placeholder="Frankfurt am Main"
+                  class="form-control"
+                  type="text"
+                />
+                <small class="help-block">Check City on Ausweis </small>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label"
+                >9. WANN WURDE DER AUSWEIS AUSGESTELLT?
+              </label>
+              <div class="col-md-6">
+                <input
+                  name="first_name"
+                  placeholder="yyyy-mm-dd"
+                  class="form-control"
+                  type="text"
+                />
+                <small class="help-block"
+                  >Check Date on Ausweis (WELCHES JAHR, MONAT, TAG?)
+                </small>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label"
+                >10. WO WURDE DER AUSWEIS AUSGESTELLT
+              </label>
+              <div class="col-md-6">
+                <input
+                  name="first_name"
+                  placeholder="Stadt Frankfurt am Main"
+                  class="form-control"
+                  type="text"
+                />
+                <small class="help-block">Check City on Ausweis </small>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label"
+                >11. Check date of expiration
+              </label>
+              <div class="col-md-6">
+                <input
+                  name="first_name"
+                  placeholder="yyyy-mm-dd"
+                  class="form-control"
+                  type="text"
+                />
+                <small class="help-block">Check Date on Ausweis </small>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-12 control-label"
+                >12. BITTE WARTEN SIE EINEN KURZEN MOMENT, ICH MUSS IHRE
+                ADDRESSE KURZ PRÜFEN.
+              </label>
+              <div class="col-md-4">
+                <div>
+                  <label class="control-label"
+                    ><strong> Meta Information </strong></label
+                  >
+                </div>
+                <div>
+                  <label class="control-label">Street :</label>
+                </div>
+                <div>
+                  <label class="control-label">House Number :</label>
+                </div>
+                <div>
+                  <label class="control-label">Postal Code :</label>
+                </div>
+                <div>
+                  <label class="control-label">City :</label>
+                </div>
+                <div>
+                  <label class="control-label">Country :</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div>
+                  <label class="control-label"
+                    ><strong>
+                      Address Information <br />
+                      Document Address Type : National ID
+                    </strong></label
+                  >
+                </div>
+                <div>
+                  <label class="control-label"
+                    >House Number : <strong>5</strong></label
+                  >
+                </div>
+                <div>
+                  <label class="control-label"
+                    >Street : <strong>Walldorfer Strabe</strong></label
+                  >
+                </div>
+                <div>
+                  <label class="control-label"
+                    >City : <strong>Frankfurt</strong></label
+                  >
+                </div>
+                <div>
+                  <label class="control-label"
+                    >Postal Code : <strong>60598</strong></label
+                  >
+                </div>
+                <div>
+                  <label class="control-label"
+                    >Country : <strong>DE</strong></label
+                  >
+                </div>
+              </div>
+              <div class="col-md-12">
+                <!-- Button -->
+
+                <div class="form-group controls">
+                  <a id="btn-login" href="#" class="btn btn-success">Yes </a>
+                  <a id="btn-fblogin" href="#" class="btn btn-primary">No</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" />
+      <div id="caption"></div>
+    </div>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
     <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/style-min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
 
-    <script src="assets/js/scripts-min.js" async defer></script>
+    <script src="assets/js/scripts.js" async defer></script>
   </body>
 </html>

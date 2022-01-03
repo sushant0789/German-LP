@@ -224,15 +224,11 @@ header .container {
 
 /* The Modal (background) */
 .modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
+  position: absolute;
   /* Stay in place */
   z-index: 9999;
   /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
-  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
   /* Full width */
@@ -240,18 +236,13 @@ header .container {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
+  background: none;
 }
 
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
 }
 
 /* Caption of Modal Image */

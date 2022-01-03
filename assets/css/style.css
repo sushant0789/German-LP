@@ -161,6 +161,7 @@ header .container {
 .video-bg {
   width: 100%;
   display: none;
+  height: 300px;
 }
 
 .video-bg {

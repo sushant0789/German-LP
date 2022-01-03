@@ -16,10 +16,10 @@
     <link rel="canonical" href="" />
   </head>
   <body>
-    <div class="container register">
-      <header>
+    <header>
+      <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-3">
             <!-- Stream video via webcam -->
             <div class="video-wrap">
               <video id="video"></video>
@@ -28,9 +28,18 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">&nbsp;</div>
-          <div class="col-md-4">
-            <div class="img-outer">
+          <div class="col-md-6 text-center">
+            <img src="assets/images/demo.jpg" alt="demo" />
+          </div>
+          <div class="col-md-3">
+            <div class="img-outer pop">
+              <img
+                class="myImg"
+                src="assets/images/Passport.jpg"
+                alt="Passport"
+              />
+            </div>
+            <div class="img-outer pop">
               <img
                 class="myImg"
                 src="assets/images/Passport.jpg"
@@ -39,7 +48,9 @@
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
+    <div class="container register">
       <div class="row">
         <div class="col-md-12 register-right">
           <h4 class="register-heading">
@@ -253,7 +264,9 @@
                   >
                 </div>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-4">&nbsp;</div>
+              <div class="col-md-4">&nbsp;</div>
+              <div class="col-md-4 padding-top20">
                 <!-- Button -->
 
                 <div class="form-group controls">
@@ -262,16 +275,81 @@
                 </div>
               </div>
             </div>
+            <div class="row form-group">
+              <label class="col-md-12 control-label"
+                >13. WIR SIND GLEICH FERTIG. BITTE GEBEN SIE AUF DEM
+                NACHFOLGENDEN BILDSCHIRM IHRE HANDY-NUMMER (OHNE DIE „0“) EIN.
+                SIE BEKOMMEN AUF DIESE NUMMER EINE SMS MIT EINER VIERSTELLIGEN
+                PIN.
+              </label>
+              <label class="col-md-12 control-label"
+                >BITTE SCHLIESSEN SIE DAS BROWSERFENSTER NICHT, BEVOR SIE DIE
+                PIN EINGEGEBEN HABEN.
+              </label>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-12 control-label"
+                >14. DAS WAR‘S - ICH WÜNSCHE IHNEN EINEN SCHÖNEN TAG/ABEND.
+              </label>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label">Is Verified? </label>
+              <div class="col-md-3">
+                <select class="form-control">
+                  <option>Yes</option>
+                  <option>Fraud</option>
+                  <option>Flow</option>
+                  <option>Incomplete</option>
+                </select>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label"
+                >All Questions Answered?
+              </label>
+              <div class="col-md-3">
+                <select class="form-control">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label">End Call </label>
+              <div class="col-md-3">
+                <!-- Button -->
+
+                <div class="form-group controls">
+                  <a id="btn-login" href="#" class="btn btn-success"
+                    >End & Update</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-      <span class="close">&times;</span>
-      <img class="modal-content" id="img01" />
-      <div id="caption"></div>
+    <div
+      class="modal fade"
+      id="imagemodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">
+              <span aria-hidden="true">&times;</span
+              ><span class="sr-only">Close</span>
+            </button>
+            <img src="" class="imagepreview" style="width: 100%" />
+          </div>
+        </div>
+      </div>
     </div>
     <link
       href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -285,7 +363,7 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="assets/js/scripts.js" async defer></script>
   </body>
 </html>

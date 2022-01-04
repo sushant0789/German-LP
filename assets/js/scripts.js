@@ -1,6 +1,7 @@
 $(function () {
-  $(".img-outer").on("click", function () {
-    $(this).toggleClass("zoom");
+  $(".pop").on("click", function () {
+    $(".imagepreview").attr("src", $(this).find("img").attr("src"));
+    $("#imagemodal").modal("show");
   });
 });
 

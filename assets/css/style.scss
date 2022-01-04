@@ -28,7 +28,6 @@ header {
   .container {
     background-color: #fff;
     box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
-    height: 350px;
   }
 }
 
@@ -159,7 +158,6 @@ header {
 .img-outer {
   position: relative;
   transition: 0.3s;
-  z-index: 100;
   &::after {
     transition: 0.3s;
     position: absolute;
@@ -179,29 +177,91 @@ header {
   &:hover::after {
     display: none;
   }
-  /* The zoom effect */
-  img {
-    transition: transform 0.25s ease;
-    cursor: zoom-in;
-    width: 250px;
+}
+
+/* The Modal (background) */
+.modal {
+  position: absolute; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  right: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background: none;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
   }
-  &.zoom {
-    top: 80px;
-    img {
-      transform: scale(2);
-      cursor: zoom-out;
-      max-height: 200px;
-    }
-    &::after {
-      display: none;
-    }
+  to {
+    -webkit-transform: scale(1);
   }
-  &.img-outer2 {
-    position: fixed;
-    z-index: 99;
-    &.zoom {
-      z-index: 101;
-    }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.padding-top20 {
+  padding-top: 20px;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
   }
 }
 

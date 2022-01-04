@@ -83,19 +83,19 @@
               <div class="col-md-3">
                 <input
                   name="first_name"
+                  placeholder="Last Name"
+                  class="form-control"
+                  type="text"
+                />
+              </div>
+              <div class="col-md-3">
+                <input
+                  name="first_name"
                   placeholder="Maiden Name"
                   class="form-control"
                   type="text"
                 />
                 <small class="help-block">Check Maiden Name on Ausweis </small>
-              </div>
-              <div class="col-md-3">
-                <input
-                  name="first_name"
-                  placeholder="Last Name"
-                  class="form-control"
-                  type="text"
-                />
               </div>
             </div>
             <div class="row form-group">
@@ -175,21 +175,7 @@
             </div>
             <div class="row form-group">
               <label class="col-md-3 control-label"
-                >10. WO WURDE DER AUSWEIS AUSGESTELLT
-              </label>
-              <div class="col-md-6">
-                <input
-                  name="first_name"
-                  placeholder="Stadt Frankfurt am Main"
-                  class="form-control"
-                  type="text"
-                />
-                <small class="help-block">Check City on Ausweis </small>
-              </div>
-            </div>
-            <div class="row form-group">
-              <label class="col-md-3 control-label"
-                >11. Check date of expiration
+                >10. Check date of expiration
               </label>
               <div class="col-md-6">
                 <input
@@ -199,6 +185,20 @@
                   type="text"
                 />
                 <small class="help-block">Check Date on Ausweis </small>
+              </div>
+            </div>
+            <div class="row form-group">
+              <label class="col-md-3 control-label"
+                >11. WO WURDE DER AUSWEIS AUSGESTELLT
+              </label>
+              <div class="col-md-6">
+                <input
+                  name="first_name"
+                  placeholder="Stadt Frankfurt am Main"
+                  class="form-control"
+                  type="text"
+                />
+                <small class="help-block">Check City on Ausweis </small>
               </div>
             </div>
             <div class="row form-group">
@@ -228,7 +228,7 @@
                   <label class="control-label">Country :</label>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-6">
                 <div>
                   <label class="control-label"
                     ><strong>
@@ -237,41 +237,68 @@
                     </strong></label
                   >
                 </div>
-                <div>
-                  <label class="control-label"
-                    >House Number : <strong>5</strong></label
-                  >
+                <div class="form-group row">
+                  <label class="col-md-4 control-label">Street : </label>
+                  <div class="col-md-6">
+                    <input
+                      name="Street"
+                      placeholder="Street"
+                      class="form-control"
+                      type="text"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label class="control-label"
-                    >Street : <strong>Walldorfer Strabe</strong></label
-                  >
+                <div class="form-group row">
+                  <label class="col-md-4 control-label">House Number :</label>
+                  <div class="col-md-6">
+                    <input
+                      name="House Number"
+                      placeholder="House Number"
+                      class="form-control"
+                      type="text"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label class="control-label"
-                    >City : <strong>Frankfurt</strong></label
-                  >
+                <div class="form-group row">
+                  <label class="col-md-4 control-label">Postal Code :</label>
+                  <div class="col-md-6">
+                    <input
+                      name="Postal Code"
+                      placeholder="Postal Code"
+                      class="form-control"
+                      type="text"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label class="control-label"
-                    >Postal Code : <strong>60598</strong></label
-                  >
+                <div class="form-group row">
+                  <label class="col-md-4 control-label">City : </label>
+                  <div class="col-md-6">
+                    <input
+                      name="City"
+                      placeholder="City"
+                      class="form-control"
+                      type="text"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label class="control-label"
-                    >Country : <strong>DE</strong></label
-                  >
+                <div class="form-group row">
+                  <label class="col-md-4 control-label">Country : </label>
+                  <div class="col-md-6">
+                    <input
+                      name="Country"
+                      placeholder="Country"
+                      class="form-control"
+                      type="text"
+                    />
+                  </div>
                 </div>
               </div>
               <div class="col-md-4">&nbsp;</div>
-              <div class="col-md-4">&nbsp;</div>
-              <div class="col-md-4 padding-top20">
+              <div class="col-md-6">
                 <!-- Button -->
 
                 <div class="form-group controls">
-                  <a id="btn-login" href="#" class="btn btn-success"
-                    >DE-Ausweis</a
-                  >
+                  <a id="btn-login" href="#" class="btn btn-success">Ausweis</a>
                   <a id="btn-fblogin" href="#" class="btn btn-primary"
                     >Andere</a
                   >
@@ -302,17 +329,6 @@
                   <option>Yes</option>
                   <option>Fraud</option>
                   <option>Flow Incomplete</option>
-                </select>
-              </div>
-            </div>
-            <div class="row form-group">
-              <label class="col-md-3 control-label"
-                >All Questions Answered?
-              </label>
-              <div class="col-md-3">
-                <select class="form-control">
-                  <option>Yes</option>
-                  <option>No</option>
                 </select>
               </div>
             </div>
